@@ -1,0 +1,21 @@
+{
+  "name": "hyperapp-fusebox",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "predev": "rm -rf .fusebox dist",
+    "dev": "node fuse dev",
+    "prod": "node fuse prod"
+  },
+  "dependencies": {
+    "@hyperapp/router": "0.3.0",
+    "hyperapp": "0.12.1",
+    "picostyle": "0.1.5"
+  },
+  "devDependencies": {
+    "fuse-box": "2.2.31",
+    "typescript": "2.5.3",
+    "uglify-js": "3.1.3"
+  }
+}

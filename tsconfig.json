@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "jsx": "react",
+    "jsxFactory": "h",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "target": "ES6",
+    "noEmitOnError": false
+  },
+  "compileOnSave": false,
+  "exclude": ["node_modules"]
+}
