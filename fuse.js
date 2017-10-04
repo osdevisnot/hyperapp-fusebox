@@ -3,7 +3,6 @@ let fuse, app
 let isProduction = false
 
 Sparky.task('config', _ => {
-  console.log('==> isProduction : ', isProduction)
   fuse = new FuseBox({
     homeDir: 'src/',
     sourceMaps: !isProduction,
