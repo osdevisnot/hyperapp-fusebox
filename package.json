@@ -11,7 +11,7 @@
     "preprod": "yarn run clean",
     "prod": "node fuse prod",
     "predist": "yarn run clean",
-    "dist": "node fuse release",
+    "dist": "node fuse dist",
     "presetup": "git clean -fdX",
     "setup": "yarn --version || npm install -g yarn",
     "postsetup": "yarn",
