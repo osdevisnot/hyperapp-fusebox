@@ -34,6 +34,6 @@ Sparky.task('dev', ['clean', 'config'], _ => {
   return fuse.run()
 })
 Sparky.task('prod', ['clean', 'env', 'config'], _ => {
-  fuse.dev({ reload: true }) // remove after demo
+  // fuse.dev({ reload: true }) // remove after demo
   return fuse.run()
 })
