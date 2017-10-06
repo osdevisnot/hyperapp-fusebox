@@ -1,13 +1,23 @@
 {
   "name": "hyperapp-fusebox",
   "version": "1.0.0",
+  "description": "Starting Point for a Hyperapp and Picostyle projects.",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "predev": "rm -rf .fusebox dist",
+    "clean": "git clean -fdX --exclude='!node_modules'",
+    "predev": "yarn run clean",
     "dev": "node fuse dev",
-    "preprod": "rm -rf .fusebox dist",
-    "prod": "node fuse prod"
+    "preprod": "yarn run clean",
+    "prod": "node fuse prod",
+    "predist": "yarn run clean",
+    "dist": "node fuse release",
+    "presetup": "git clean -fdX",
+    "setup": "yarn --version || npm install -g yarn",
+    "postsetup": "yarn",
+    "precommit": "lint-staged",
+    "post-rewrite": "yarn",
+    "post-merge": "yarn"
   },
   "dependencies": {
     "@hyperapp/router": "0.3.0",
@@ -16,7 +26,15 @@
   },
   "devDependencies": {
     "fuse-box": "2.3.3",
+    "husky": "0.14.3",
+    "lint-staged": "4.2.3",
+    "npm-sort": "0.0.4",
+    "prettier": "1.7.4",
     "typescript": "2.5.3",
     "uglify-js": "3.1.3"
+  },
+  "lint-staged": {
+    "*.{js,css,json}": ["prettier --single-quote --no-semi --print-width 120 --write", "git add"],
+    "*package.json": ["npm-sort", "git add"]
   }
 }

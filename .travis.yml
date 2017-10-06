@@ -5,4 +5,12 @@ cache:
   yarn: true
 node_js:
   - 8
-script: yarn prod
+script: npm run setup && yarn prod
+deploy:
+  local_dir: dist
+  fqdn: hyperapp-fusebox.deployable.site
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  on:
+    branch: master

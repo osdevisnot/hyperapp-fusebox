@@ -16,16 +16,30 @@ The purpose of this example was to create a "Starting Point for a [Hyperapp](htt
 
 ## Getting Started / Commands
 
+#### Setup
+Clone this repo & run setup script
+```
+git clone https://github.com/osdevisnot/hyperapp-fusebox.git
+cd hyperapp-fusebox
+npm run setup
+```
+
 #### Development
 Build the app in dev mode with Hot Reloading development server.
 ```
 yarn dev  #  npm run dev
 ```
 
+#### Production
+Build the app in prod mode with static server.
+```
+yarn prod  #  npm run serve
+```
+
 #### Release
 Build the app for production deployment.
 ```
-yarn prod  #  npm run prod
+yarn dist  #  npm run prod
 ```
 
 ## Authors and license
