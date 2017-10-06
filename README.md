@@ -1,5 +1,7 @@
 # hyperapp-fusebox
 
+[![Build Status](https://travis-ci.org/osdevisnot/hyperapp-fusebox.svg)](https://travis-ci.org/osdevisnot/hyperapp-fusebox)
+
 The purpose of this example was to create a "Starting Point for a [Hyperapp](https://hyperapp.js.org/) and [Picostyle](https://github.com/picostyle/picostyle) projects."
 
 ## Features

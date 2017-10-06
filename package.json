@@ -6,6 +6,7 @@
   "scripts": {
     "predev": "rm -rf .fusebox dist",
     "dev": "node fuse dev",
+    "preprod": "rm -rf .fusebox dist",
     "prod": "node fuse prod"
   },
   "dependencies": {
