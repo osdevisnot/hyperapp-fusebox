@@ -5,7 +5,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "clean": "git clean -fdX --exclude='!node_modules'",
+    "clean": "rm -rf dist .fusebox",
     "predev": "yarn run clean",
     "dev": "node fuse dev",
     "preprod": "yarn run clean",
