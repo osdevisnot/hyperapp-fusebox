@@ -11,11 +11,11 @@
   },
   "dependencies": {
     "@hyperapp/router": "0.3.0",
-    "hyperapp": "0.12.1",
+    "hyperapp": "0.14.0",
     "picostyle": "0.1.5"
   },
   "devDependencies": {
-    "fuse-box": "2.3.1",
+    "fuse-box": "2.3.3",
     "typescript": "2.5.3",
     "uglify-js": "3.1.3"
   }
