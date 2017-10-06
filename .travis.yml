@@ -1,3 +1,4 @@
+sudo: false
 language: node_js
 cache:
   directories:
@@ -5,7 +6,7 @@ cache:
   yarn: true
 node_js:
   - 8
-script: npm run setup && yarn prod
+script: npm run setup && yarn dist
 deploy:
   local_dir: dist
   fqdn: hyperapp-fusebox.deployable.site
