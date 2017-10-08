@@ -15,7 +15,7 @@ Sparky.task('config', _ => {
       EnvPlugin({ NODE_ENV: isProduction ? 'production' : 'development' }),
       CSSPlugin(),
       TypeScriptHelpers(),
-      WebIndexPlugin({ title: 'Hyperapp Fusebox Starter' }),
+      WebIndexPlugin({ template: 'src/index.html' }),
       isProduction &&
         QuantumPlugin({
           bakeApiIntoBundle: 'app',
@@ -27,16 +27,17 @@ Sparky.task('config', _ => {
   app = fuse.bundle('app').instructions('> app.js')
 })
 Sparky.task('clean', _ => Sparky.src('dist/').clean('dist/'))
+Sparky.task('copy', _ => Sparky.src('*', { base: 'public/' }).dest('dist/'))
 Sparky.task('env', _ => (isProduction = true))
-Sparky.task('dev', ['clean', 'config'], _ => {
+Sparky.task('dev', ['clean', 'config', 'copy'], _ => {
   fuse.dev({ port: 9000, reload: true })
   app.watch().hmr()
   return fuse.run()
 })
-Sparky.task('prod', ['clean', 'env', 'config'], _ => {
+Sparky.task('prod', ['clean', 'env', 'config', 'copy'], _ => {
   fuse.dev({ reload: true })
   return fuse.run()
 })
-Sparky.task('dist', ['clean', 'env', 'config'], _ => {
+Sparky.task('dist', ['clean', 'env', 'config', 'copy'], _ => {
   return fuse.run()
 })

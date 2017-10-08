@@ -6,6 +6,9 @@
 
 The purpose of this example was to create a "Starting Point for a [Hyperapp](https://hyperapp.js.org/) and [Picostyle](https://github.com/picostyle/picostyle) projects."
 
+## DEMO
+[http://hyperapp-fusebox.deployable.site/](http://hyperapp-fusebox.deployable.site/)
+
 ## Features
 - [x] Latest [Hyperapp](https://hyperapp.js.org/)
 - [x] Latest [Picostyle](https://github.com/picostyle/picostyle)
