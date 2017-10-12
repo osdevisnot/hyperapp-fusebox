@@ -13,7 +13,7 @@ Sparky.task('config', _ => {
     experimentalFeatures: true,
     plugins: [
       EnvPlugin({ NODE_ENV: isProduction ? 'production' : 'development' }),
-      CSSPlugin(),
+      CSSPlugin({ minify: isProduction }),
       TypeScriptHelpers(),
       WebIndexPlugin({ template: 'src/index.html' }),
       isProduction &&
