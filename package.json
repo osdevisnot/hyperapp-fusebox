@@ -31,7 +31,7 @@
     "npm-sort": "0.0.4",
     "prettier": "1.8.0",
     "typescript": "2.5.3",
-    "uglify-js": "3.1.7"
+    "uglify-js": "3.1.8"
   },
   "lint-staged": {
     "*.{js,css,json}": ["prettier --single-quote --no-semi --print-width 120 --write", "git add"],
