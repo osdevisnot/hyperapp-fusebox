@@ -29,7 +29,7 @@
     "husky": "0.14.3",
     "lint-staged": "4.3.0",
     "npm-sort": "0.0.4",
-    "prettier": "1.8.0",
+    "prettier": "1.8.2",
     "typescript": "2.6.1",
     "uglify-js": "3.1.8"
   },
