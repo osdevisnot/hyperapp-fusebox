@@ -30,7 +30,7 @@
     "lint-staged": "5.0.0",
     "npm-sort": "0.0.4",
     "prettier": "1.8.2",
-    "typescript": "2.6.1",
+    "typescript": "2.6.2",
     "uglify-js": "3.2.0"
   },
   "lint-staged": {
