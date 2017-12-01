@@ -27,7 +27,7 @@
   "devDependencies": {
     "fuse-box": "2.4.0",
     "husky": "0.14.3",
-    "lint-staged": "5.0.0",
+    "lint-staged": "6.0.0",
     "npm-sort": "0.0.4",
     "prettier": "1.8.2",
     "typescript": "2.6.2",
