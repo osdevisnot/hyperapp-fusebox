@@ -20,7 +20,7 @@
     "post-merge": "yarn"
   },
   "dependencies": {
-    "@hyperapp/router": "0.3.0",
+    "@hyperapp/router": "0.4.1",
     "hyperapp": "0.18.0",
     "picostyle": "0.2.0"
   },
