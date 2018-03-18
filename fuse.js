@@ -1,4 +1,4 @@
-const { FuseBox, Sparky, EnvPlugin, CSSPlugin, TypeScriptHelpers, WebIndexPlugin, QuantumPlugin } = require('fuse-box')
+const { FuseBox, Sparky, EnvPlugin, CSSPlugin, WebIndexPlugin, QuantumPlugin } = require('fuse-box')
 let fuse, app
 let isProduction = false
 
@@ -14,7 +14,6 @@ Sparky.task('config', _ => {
     plugins: [
       EnvPlugin({ NODE_ENV: isProduction ? 'production' : 'development' }),
       CSSPlugin({ minify: isProduction }),
-      TypeScriptHelpers(),
       WebIndexPlugin({ template: 'src/index.html' }),
       isProduction &&
         QuantumPlugin({
