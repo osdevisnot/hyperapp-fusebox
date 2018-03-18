@@ -20,17 +20,15 @@ const Button = ({ kind, label, update, disabled }) => (
   </StyledButton>
 )
 
-export const view = (state, actions) => {
-  return (
-    <Counter>
-      <Heading>Welcome to HyperApp!</Heading>
-      <Break />
-      <section>
-        {Button({ kind: 'add', label: '+', update: actions.add })}
-        <PaddedHeading>{state.num}</PaddedHeading>
-        {Button({ kind: 'sub', label: '-', update: actions.sub, disabled: state.num <= 0 })}
-        {clickCount(state.clicks)}
-      </section>
-    </Counter>
-  )
-}
+export const view = (state, actions) => (
+  <Counter>
+    <Heading>Welcome to HyperApp!</Heading>
+    <Break />
+    <section>
+      {Button({ kind: 'add', label: '+', update: actions.add })}
+      <PaddedHeading>{state.num}</PaddedHeading>
+      {Button({ kind: 'sub', label: '-', update: actions.sub, disabled: state.num <= 0 })}
+      {clickCount(state.clicks)}
+    </section>
+  </Counter>
+)
