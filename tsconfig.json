@@ -5,7 +5,8 @@
     "module": "commonjs",
     "moduleResolution": "node",
     "target": "ES6",
-    "noEmitOnError": false
+    "noEmitOnError": false,
+    "importHelpers": true
   },
   "compileOnSave": false,
   "exclude": ["node_modules"]
