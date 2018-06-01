@@ -29,7 +29,7 @@
     "lint-staged": "7.1.1",
     "npm-sort": "0.0.4",
     "prettier": "1.12.1",
-    "tslib": "1.9.1",
+    "tslib": "1.9.2",
     "typescript": "2.8.3",
     "uglify-es": "3.3.9"
   },
