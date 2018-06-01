@@ -20,7 +20,7 @@
   },
   "dependencies": {
     "@hyperapp/router": "0.7.0",
-    "hyperapp": "1.2.5",
+    "hyperapp": "1.2.6",
     "picostyle": "1.0.2"
   },
   "devDependencies": {
