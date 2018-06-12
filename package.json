@@ -21,7 +21,7 @@
   "dependencies": {
     "@hyperapp/router": "0.7.0",
     "hyperapp": "1.2.5",
-    "picostyle": "1.0.2"
+    "picostyle": "2.0.0"
   },
   "devDependencies": {
     "fuse-box": "3.2.2",
