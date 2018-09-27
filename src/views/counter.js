@@ -1,5 +1,5 @@
 import { h } from 'hyperapp'
-import * as picostyle from 'picostyle'
+import picostyle from 'picostyle'
 const styled = picostyle(h)
 
 import { Counter, Heading, PaddedHeading, Break, StyledButton } from '../styles/counter'
@@ -7,7 +7,8 @@ import { Counter, Heading, PaddedHeading, Break, StyledButton } from '../styles/
 const clickCount = clicks => {
   return clicks > 0 ? (
     <div>
-      You clicked {clicks} time{clicks > 1 ? 's' : ''}
+      You clicked {clicks} time
+      {clicks > 1 ? 's' : ''}
     </div>
   ) : (
     ''

@@ -1,5 +1,5 @@
 import { h } from 'hyperapp'
-import * as picostyle from 'picostyle'
+import picostyle from 'picostyle'
 const styled = picostyle(h)
 
 export const Counter = styled('div')({ textAlign: 'center' })
@@ -23,5 +23,7 @@ export const StyledButton = (props, children) =>
     backgroundColor: props.disabled
       ? // ? lighten('mediumvioletred', '50%') // todo: support scss equivalents?
         'yellow'
-      : props.kind === 'add' ? 'mediumseagreen' : 'mediumvioletred'
+      : props.kind === 'add'
+        ? 'mediumseagreen'
+        : 'mediumvioletred'
   })(props, children)
