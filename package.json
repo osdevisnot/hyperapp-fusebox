@@ -23,7 +23,7 @@
     "picostyle": "2.0.1"
   },
   "devDependencies": {
-    "fuse-box": "3.5.0",
+    "fuse-box": "3.6.0",
     "husky": "1.0.1",
     "lint-staged": "7.3.0",
     "npm-sort": "0.0.4",
