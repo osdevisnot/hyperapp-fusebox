@@ -18,7 +18,7 @@
     "post-merge": "npm install"
   },
   "dependencies": {
-    "@hyperapp/router": "0.7.1",
+    "@hyperapp/router": "0.7.2",
     "hyperapp": "1.2.9",
     "picostyle": "2.0.1"
   },
