@@ -27,7 +27,7 @@
     "husky": "1.1.4",
     "lint-staged": "8.0.0",
     "npm-sort": "0.0.4",
-    "prettier": "1.15.2",
+    "prettier": "1.18.0",
     "tslib": "1.9.3",
     "typescript": "3.0.3",
     "uglify-es": "3.3.9"
