@@ -28,7 +28,7 @@
     "lint-staged": "8.0.0",
     "npm-sort": "0.0.4",
     "prettier": "1.15.2",
-    "tslib": "1.9.3",
+    "tslib": "1.10.0",
     "typescript": "3.0.3",
     "uglify-es": "3.3.9"
   },
